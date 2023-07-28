@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  debian:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: debian
+    volumes:
+      - ./srcs:/home
+    tty: true
